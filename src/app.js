@@ -13,7 +13,7 @@ const criancas = require('./routes/criancasRoutes')
 app.use(cors())
 app.use( bodyParser.json());
 app.use('/', index);
-app.use ('//', criancas);
+app.use ('/', criancas);
 
 
 
