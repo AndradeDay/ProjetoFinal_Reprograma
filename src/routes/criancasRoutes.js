@@ -73,8 +73,8 @@ router.post('/login', controllerAdocao.login);
 router.get('/criancas', autenticarAdmin, controllerAdocao.mostrarCriancasAdmin);
 router.get('/criancasUser',autenticar, controllerAdocao.mostrarCriancasUser);
 router.get('/cadastros', autenticarAdmin,controllerAdocao.mostrarCadastros);
-router.delete('/deletar/:id',autenticarAdmin, controllerAdocao.deletar);
-router.delete('deletarUser/:id', autenticarAdmin, controllerAdocao.deletarUser);
+router.delete('/deletar/:id', autenticarAdmin, controllerAdocao.deletar);
+router.delete('/deletarCadastro/:id', autenticarAdmin, controllerAdocao.deletarCadastro);
 router.patch('/atualizar/:id', autenticarAdmin, controllerAdocao.update);
 
 module.exports = router

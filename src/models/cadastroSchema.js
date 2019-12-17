@@ -7,7 +7,7 @@ const cadastrosSchema = new Schema({
     nome: {type: String, required: true}, 
     email: {type: String, required: true},
     senha:{type:String, required: true},
-    grupo: {type: String}
+    grupo: {type: String}   
 })
 
 

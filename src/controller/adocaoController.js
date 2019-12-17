@@ -83,12 +83,14 @@ const mostrarCadastros = (request, response) => {
     }) 
 }
 
-const deletarUser = (request, response) => {
+const deletarCadastro = (request, response) => {
     const idParams = request.params.id
 
     cadastrosCollection.findByIdAndDelete(idParams, (error, cadastro) => {
         if (error) {
             return response.Status(500).send(error)
+
+            
         } if(cadastro) {
             return response.status(200).send('Cadastro deletado!')
         } else{
@@ -134,13 +136,12 @@ const mostrarCriancasAdmin = (request, response) => {
 
 const criancasUser = (criancasCollection) => {
 
-    novoSchema.nome = criancasCollection[0].nome,
-        novoSchema.apeliddo = criancasCollection[0].apelido,
-        novoSchema.personalidade = criancasCollection[0].personalidade,
-        novoSchema.hobbies = criancasCollection[0].hobbies
+        novoSchema.nome = criancasCollection[2].nome,
+        novoSchema.apeliddo = criancasCollection[2].apelido,
+        novoSchema.personalidade = criancasCollection[2].personalidade,
+        novoSchema.hobbies = criancasCollection[2].hobbies
 
-    console.log(criancasCollection[0].nome)
-    return novoSchema
+        return novoSchema
 }
 
 const mostrarCriancasUser = (request, response) => {
@@ -201,7 +202,7 @@ module.exports = {
     mostrarCriancasUser,
     mostrarCadastros,
     deletar,
-    deletarUser,
+    deletarCadastro,
     update,
     login
 } 
