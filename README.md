@@ -19,7 +19,9 @@ Mongosse
 
 ##### Mão na massa, vamos iniciar o projeto :ok_hand:
 
-<h1> - Forkar esse repositório <h1>
+
+- Forkar esse repositório
+  =======================
 - Dê um git clone + link 
 - Abrir o prompt de comando (de sua preferencia). 
 - entrar na pasta raiz do projeto, com o comando cd + caminho da pasta.
