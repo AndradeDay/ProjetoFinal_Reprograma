@@ -2,7 +2,7 @@
 
 ### Orfanato além dos olhos. 
 
-                                          ### Objetivo
+  #### Objetivo
 
 A API foi desenvolvida para facilitar parte do processo de adoção, fazendo com que a pessoa interessa em adotar se identifique com as crianças a partir das suas personalidades e hobbies, deixando a questão socioeconomica e racias de lado.
 
